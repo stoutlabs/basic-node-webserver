@@ -40,20 +40,20 @@ hbs.registerHelper("screamIt", text => {
 //*** VIEW RENDERING ***//
 app.get("/", (req, res) => {
   res.render("home.hbs", {
-    pageTitle: "Home Page",
-    welcomeMessage: "Welcome to this basic ass website, punk."
+    pageTitle: "Home",
+    welcomeMessage: "Welcome to this super basic express.js server. I'm running it to test server functionality. If this is visible, I did it!!"
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about.hbs", {
-    pageTitle: "About Page"
+    pageTitle: "About"
   });
 });
 
 app.get("/projects", (req, res) => {
   res.render("projects.hbs", {
-    pageTitle: "Projects Page"
+    pageTitle: "Projects"
   });
 });
 
